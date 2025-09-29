@@ -1,0 +1,181 @@
+@import "tailwindcss";
+
+/* EMERGENCY VISIBILITY FIX - Force all elements to be visible */
+* {
+  background-color: white !important;
+  color: black !important;
+}
+
+.bg-blue-600, .hover\:bg-blue-700:hover, button {
+  background-color: #2563eb !important;
+  color: rgba(255, 255, 255, 0.718) !important;
+}
+
+.bg-red-50 {
+  background-color: #fef2f2 !important;
+  color: #991b1b !important;
+}
+
+.bg-yellow-50 {
+  background-color: #fffbeb !important;
+  color: #92400e !important;
+}
+
+.bg-blue-50 {
+  background-color: #eff6ff !important;
+  color: #1e40af !important;
+}
+
+.bg-green-100 {
+  background-color: #dcfce7 !important;
+  color: #166534 !important;
+}
+
+/* Completely override any dark theme */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #f9fafb !important;
+  --foreground: #111827 !important;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+/* Force light mode everywhere */
+html {
+  background-color: #f9fafb !important;
+  color: #111827 !important;
+}
+
+body {
+  background: #f9fafb !important;
+  background-color: #f9fafb !important;
+  color: #111827 !important;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Override any Next.js or system themes */
+#__next {
+  background-color: #f9fafb !important;
+  color: #111827 !important;
+}
+
+/* Ensure all text is readable */
+* {
+  color: inherit;
+}
+
+/* Fix any potential dark text on dark background issues */
+.bg-white {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+}
+
+.bg-gray-50 {
+  background-color: #f9fafb !important;
+}
+
+/* Ensure navigation is always visible */
+nav {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+}
+
+/* Fix any card backgrounds */
+.bg-white .text-gray-900 {
+  color: #111827 !important;
+}
+
+.bg-white .text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.bg-white .text-gray-700 {
+  color: #374151 !important;
+}
+
+.bg-white .text-gray-800 {
+  color: #1f2937 !important;
+}
+
+/* Ensure all text colors are visible */
+.text-gray-900 {
+  color: #111827 !important;
+}
+
+.text-gray-800 {
+  color: #1f2937 !important;
+}
+
+.text-gray-700 {
+  color: #374151 !important;
+}
+
+.text-gray-600 {
+  color: #4b5563 !important;
+}
+
+.text-gray-500 {
+  color: #6b7280 !important;
+}
+
+.text-gray-400 {
+  color: #9ca3af !important;
+}
+
+/* Fix navigation specifically */
+nav a, nav span {
+  color: inherit !important;
+}
+
+.text-blue-700 {
+  color: #1d4ed8 !important;
+}
+
+.text-blue-800 {
+  color: #1e40af !important;
+}
+
+/* Override any dark mode interference */
+html, body, #__next, [data-theme] {
+  background-color: #f9fafb !important;
+  color: #111827 !important;
+}
+
+/* Ensure job cards are always readable */
+.job-card, .bg-white {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+}
+
+/* Force all h1, h2, h3 elements to be visible */
+h1, h2, h3, h4, h5, h6 {
+  color: #111827 !important;
+  background: transparent !important;
+}
+
+/* Force all main containers */
+main, div, section, article {
+  background-color: inherit !important;
+}
+
+/* Override any Tailwind dark mode classes */
+.dark\:bg-gray-900,
+.dark\:text-white,
+.dark\:bg-black {
+  background-color: #f9fafb !important;
+  color: #111827 !important;
+}
+
+/* Ensure page containers are light */
+.max-w-7xl, .max-w-4xl, .max-w-2xl {
+  background-color: transparent !important;
+  color: #111827 !important;
+}
